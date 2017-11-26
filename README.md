@@ -5,7 +5,9 @@ This library has the function of sending e-mail using the phpmailer library. Doi
 To install the library, run the following command:
 
 ```sh
-composer requires gustavoweb / composer_teste
+
+    composer require alexm/notification
+
 ```
 
 To make use of the library, simply require the autoload of the composer, invoke the class and make the method call:
@@ -20,11 +22,6 @@ require __DIR__. '/vendor/autoload.php';
 
 
 USE Notification \ Email;
-
-
-$mail = new Email(2, "mail.host.com", "your@email.com", "your-pass", "smtp secure (tls/ssl)", "port (587)", "from@email.com", "From Name");
-
-$mail->sendEmail("Subject", "Content", "reply@email.com", "Replay Name", "address@email.com", "Address Name");
 
 $ mail = new Email (2, "mail.host.com", "your@email.com", "your-pass", "smtp secure (tls / ssl)", "port (587)", "from@email.com", "From Name");
 
