@@ -5,7 +5,7 @@ This library has the function of sending e-mail using the phpmailer library. Doi
 To install the library, run the following command:
 
 ```sh
-composer require gustavoweb/composer_teste
+composer requires gustavoweb / composer_teste
 ```
 
 To make use of the library, simply require the autoload of the composer, invoke the class and make the method call:
@@ -13,13 +13,23 @@ To make use of the library, simply require the autoload of the composer, invoke 
 ```sh
 <? php
 
+<<<<<<< HEAD
 require __DIR__ .'/vendor/autoload.php';
+=======
+require __DIR__. '/vendor/autoload.php';
+>>>>>>> parent of 6a6cc16... correcão README.md
 
-USE Notification\Email;
+USE Notification \ Email;
 
+<<<<<<< HEAD
 $mail = new Email(2, "mail.host.com", "your@email.com", "your-pass", "smtp secure (tls/ssl)", "port (587)", "from@email.com", "From Name");
 
 $mail->sendEmail("Subject", "Content", "reply@email.com", "Replay Name", "address@email.com", "Address Name");
+=======
+$ mail = new Email (2, "mail.host.com", "your@email.com", "your-pass", "smtp secure (tls / ssl)", "port (587)", "from@email.com", "From Name");
+
+$ email-> sendEmail ("SUbject", "Content", "reply@email.com", "Replay Name", "address@email.com", "Address Name");
+>>>>>>> parent of 6a6cc16... correcão README.md
 ```
 
 Note that the entire configuration of sending the email is using the magic method builder! Once you've invoked the constructor method within your application, your system will be able to fire the shots.
