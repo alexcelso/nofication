@@ -6,7 +6,7 @@ use Notification\Email;
 
 $sendEmail = new Email;
 
-$sendEmail->sendEmail("assunto", "<p>Esse é um email<b>teste</b></p>", "alexmcmc@hotmail.com", "alex M Celso", "lcon@gmail.com", "Lcon");
+$sendEmail->sendEmail();
 
 var_dump($sendEmail);
 
